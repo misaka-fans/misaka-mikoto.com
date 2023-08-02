@@ -1,5 +1,5 @@
 :root {
-  --theme-color: #ec9513; 
+  --theme-color: #ff4d17; 
   --text-main: #eee;
   --cover-color: #d1d1d1;
 }
@@ -77,11 +77,12 @@ body {
   position: sticky;
   top: 0px;
 }
-.feature-desc-container {
+.blocks-container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
+  padding:10px;
 }
 .feature-desc-item {
   padding: 10px;
@@ -94,6 +95,19 @@ body {
   -o-transition: .7s;
   -moz-transition: .7s;
   -webkit-transition: .7s;
+}
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    color: #333;
+}
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-title {
+  background-color: var(--theme-color);
 }
 footer {
   background: var(--theme-color);
